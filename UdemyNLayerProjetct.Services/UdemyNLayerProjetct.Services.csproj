@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UdemyNLayerProjetct.Core\UdemyNLayerProjetct.Core.csproj" />
+    <ProjectReference Include="..\UdemyNLayerProjetct.Data\UdemyNLayerProjetct.Data.csproj" />
+  </ItemGroup>
+
+</Project>

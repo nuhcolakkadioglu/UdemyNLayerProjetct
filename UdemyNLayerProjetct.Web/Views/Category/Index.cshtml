@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CategoryDto>
+<h1>kategoriler</h1>
+<a class="btn btn-primary mb-2" asp-action="Create">Yeni</a>
+<table class="table table-striped bg-light">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>işlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>
+                <a class="btn btn-warning btn-sm" asp-action="Update" asp-route-id="@item.Id">Güncelle</a>
+                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+
+            </td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
+
